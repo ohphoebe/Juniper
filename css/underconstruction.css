@@ -1,0 +1,44 @@
+/*jumbotron*/
+div.jumbotron {
+    background-color: #fff2e3;
+}
+
+/*jumbotron font color and family*/
+div.jumbotron>div.container-fluid.text-center>h1.display-4 {
+    font-family: Ultra, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #f16154;
+}
+
+/*jumbotron paragraph*/
+div.jumbotron>div.container-fluid.text-center>p.lead {
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+/*jumbotron go back link*/
+div.jumbotron>div.container-fluid.text-center>a.link-hover {
+    transition: 0.5s ease;
+}
+
+/*jumbotron go back link states*/
+div.jumbotron>div.container-fluid.text-center>a.link-hover:link,
+div.jumbotron>div.container-fluid.text-center>a.link-hover:visited,
+div.jumbotron>div.container-fluid.text-center>a.link-hover:active {
+    text-decoration: none;
+    color: black;
+}
+
+/*jumbotron go back link hover state*/
+div.jumbotron>div.container-fluid.text-center>a.link-hover:hover {
+    display: inline-block;
+    text-decoration: none;
+    transform: translateX(-7px);
+    opacity: 0.5;
+    color: black;
+}
+
+/*jumbotron go back link text separate from arrow*/
+div.jumbotron>div.container-fluid.text-center>a.link-hover span {
+    margin-left: 0.4em;
+}

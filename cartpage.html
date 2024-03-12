@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta data: Charset used-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--meta data: Responsive Website-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta data: Description of Website-->
+    <meta name="description"
+        content="Shop and dress up your little ones with juniper's clothing pieces. Explore juniper's fashion collection to view beautiful and stylish fit for your child. Shop online today. View your orders in the cart page.">
+    <!--meta data: Keywords of Website-->
+    <meta name="keywords"
+        content="juniper, children, kids, clothing, fit, styles, dresses, tops, bottoms, shirt, skirt, jackets, overall, cart, page, order, product">
+    <!--meta data: Favicon of Website-->
+    <link rel="icon" type="image/png" href="images/favicon-01.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--font awesome link css-->
+    <link href="css/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="css/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="css/fontawesome/css/solid.css" rel="stylesheet">
+    <!--add-on own css-->
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/cartpage.css" rel="stylesheet">
+    <title>juniper | shopping bag</title>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light text-right">
+            <!--Brand Logo-->
+            <a class="navbar-brand col-md-2 col-sm-4 text-left mx-0 px-0" href="index.html">
+                <img class="col-md-10 col-sm-6" src="images/logo-01.svg" alt="juniper logo" />
+            </a>
+            <!-- Open Hamburger Menu Button -->
+            <button class="navbar-toggler btn.open" type="button" data-toggle="collapse" data-target="#navbarContent">
+                <i class="fa-solid fa-bars border-0 text-dark"></i>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end mx-0 p-3" id="navbarContent">
+                <!-- Close X Menu Button -->
+                <button class="navbar-toggler btn-close my-4" type="button" data-toggle="collapse"
+                    data-target="#navbarContent">
+                    <i class="fas fa-times"></i>
+                </button>
+                <!--Search Bar-->
+                <div class="container-fluid">
+                    <form action="myserver.php" method="POST" class="form-inline d-block mw-100 m-0">
+                        <div class="input-group">
+                            <input type="search" class="form-control searchbar-input" placeholder="search" />
+                            <button class="input-group-text" id="search-addon">
+                                <i class="fas fa-search pr-1"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!--nav links-->
+                <ul class="navbar-nav">
+                    <li class="nav-item m-2">
+                        <a class="nav-link" href="underconstruction.html">about</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link" href="productlist.html">shop</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link" href="underconstruction.html">contact</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="nav-link" href="underconstruction.html">stores</a>
+                    </li>
+                </ul>
+                <!--nav links icons-->
+                <ul class="navbar-nav d-flex flex-row me-1 justify-content-end mx-0 p-0">
+                    <li class="nav-item ml-3">
+                        <a class="nav-link text-dark" href="underconstruction.html"><i class="fa-regular fa-bookmark"
+                                alt="bookmark"></i></a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link text-dark" href="underconstruction.html"><i class="fa-solid fa-user"
+                                alt="account"></i></a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-dark" href="cartpage.html"><i
+                                class="fa-regular fa-bag-shopping" alt="shopping bag"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Back to top button -->
+    <button class="col-lg-2" id="back-top">
+        <img src="images/icons_backToTop-01.svg" alt="back to top">
+    </button>
+
+
+    <div class="container-fluid body my-4 p-0">
+        <!--text-->
+        <div class="row justify-content-center my-4 pb-4">
+            <h1 class="display-4 text-center">shopping bag</h1>
+        </div>
+        <!--product box-->
+        <div class="row productimgrow p-4 itemgroup">
+            <!--close btn-->
+            <div class="col-md-1 col-sm-12">
+                <button class="navbar-toggler btn-close d-flex justify-content-start" type="button" data-toggle="collapse"
+                    data-target="#navbarContent" id="removeitem">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <!--product img-->
+            <div class="col-2">
+                <img src="images/thumbnail_product_featured_01.jpg">
+            </div>
+            <div class="col-md-4 col-sm-12 align-items-center my-auto py-2" >
+                <h5 class="card-title thumb-product-name">Light Yellow Pinafore Dress</h5>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 align-items-center my-auto w-100 m-0">
+                <div class="inputstepper">
+                    <div class="inputwrap flex-wrap align-items-center my-auto w-40">
+                        <button id="minus" class="inputbtn" onclick="inputstep(this)">–</button>
+                        <input type="number" min="0" max="100" value="1" step="1" disabled id="quantity">
+                        <button id="plus" class="inputbtn" onclick="inputstep(this)">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-12 align-items-center my-auto">
+                <p class="price">$42</p>
+            </div>
+        </div>
+        <div class="row go-back-btn justify-content-between">
+            <a href="index.html" class="link-hover col-md-2 col-sm-12 p-0"><i class="fa-solid fa-arrow-left"></i><span>go back</span></a>
+            <div class="col-md-4 col-sm-12 text-right p-0 mt-4">
+                <div class="subtotal">
+                    <p class="subtotaltitle m-0">Subtotal</p>
+                    <p class="subtotalprice">$42</p>
+                </div>
+                <div class="checkoutcontainer">
+                    <div class="smalltext">
+                        <p>Tax and shipping included at checkout</p>
+                    </div>
+                    <div class="buttonwrap">
+                        <button type="submit" class="btn btn-dark" id="checkoutbtn"
+                            onclick="location.href = 'orderform.html';">checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+  
+    <!--footer-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row py-4 px-2">
+                <!--footer about-->
+                <div class="col-md-2 col-sm-12 mb-4 ml-2">
+                    <h6 class="my-3">ABOUT</h6>
+                    <ul class="list-group list-unstyled bg-transparent border-0">
+                        <li class="list-group-item bg-transparent border-0"><a href="underconstruction.html">our
+                                story</a></li>
+                        <li class="list-group-item bg-transparent border-0"><a href="underconstruction.html">our
+                                blog</a></li>
+                        <li class="list-group-item bg-transparent border-0"><a
+                                href="underconstruction.html">lookbook</a></li>
+                        <li class="list-group-item bg-transparent border-0"><a href="underconstruction.html">faq</a>
+                        </li>
+                        <li class="list-group-item bg-transparent border-0"><a href="underconstruction.html">careers</a>
+                        </li>
+                        <li class="list-group-item bg-transparent border-0"><a
+                                href="underconstruction.html">shipping</a></li>
+                    </ul>
+                </div>
+                <!--footer subscribe-->
+                <div class="col-md-4 col-sm-12">
+                    <div class="row ml-2">
+                        <h6 class="my-3">SUBSCRIBE TO OUR NEWSLETTER</h6>
+                        <p class="h6 my-3">get 10% off your first order when you subscribe to us!</p>
+                    </div>
+                    <!--footer email form-->
+                    <div class="row col-sm-12 ml-2 p-0">
+                        <form class="form-inline" action="myserver.php" method="POST">
+                            <div class="input-group subscribe-input">
+                                <input required type="email" type="email" class="form-control mr-3 mw-100 emailaddress-input"
+                                    id="emailaddress" placeholder="enter email">
+                            </div>
+                            <button type="submit" class="btn btn-dark">subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 align-items-right ml-auto">
+                    <!--footer logo-->
+                    <a href="index.html" class="d-flex flex-row me-1 justify-content-end mt-3 p-0" id="center-mobile">
+                        <img class="col-md-5 col-sm-4" src="images/logo_white-01.svg" alt="juniper logo" />
+                    </a>
+                    <!--footer socials-->
+                    <ul class="navbar-nav d-flex flex-row me-1 mx-auto p-0" id="center-mobile-socials">
+                        <li class="nav-item mw-10">
+                            <a class="nav-link text-light" href="underconstruction.html"><i
+                                    class="fa-brands fa-instagram" alt="instagram"></i></a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link text-light" href="underconstruction.html"><i class="fab fa-facebook-f"
+                                    alt="facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--footer copyright-->
+                <div class="row justify-content-end mt-3 col-md-4 col-sm-4 ml-auto mx-3">
+                    <p class="align-items-right ml-auto text-light">&#xa9; 2023 juniper. all rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/base.js"></script>
+    <script src="js/cartpage.js"></script>
+
+
+</body>
+
+</html>

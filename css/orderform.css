@@ -1,0 +1,297 @@
+h1.display-4.my-4 {
+    font-family: Ultra, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #f16154;
+}
+
+h1.display-4.order-summary {
+    padding: 1em 0;
+    font-family: Ultra, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #f16154;
+}
+
+legend.legendtitle {
+    color: #f16154;
+    font-family: GothamBold, Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}   
+
+
+/*go back link*/
+a.link-hover {
+    transition: transform 0.5s ease;
+}
+
+/*go back link states*/
+a.link-hover:link,
+a.link-hover:visited,
+a.link-hover:active {
+    text-decoration: none;
+    color: black;
+}
+
+/*go back link hover state*/
+a.link-hover:hover {
+    display: inline-block;
+    text-decoration: none;
+    transform: translateX(-7px);
+    opacity: 0.5;
+    color: black;
+}
+
+/*go back link text separate from arrow*/
+body > div > form > div > div.col-md-8.col-sm-12.my-4 > section.px-4 > a.link-hover span {
+    margin-left: 0.4em;
+}
+
+label {
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+}
+
+form fieldset div.infowrapper.half {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+}
+
+/* form fieldset div.infowrapper.half div.unitinfo {
+    width: 49%;
+}
+
+form fieldset div.infowrapper.half div.names {
+    width: 49%;
+} */
+
+
+/* 'add your note' text area settings */
+section.contactinfo>fieldset>div.infowrapper.mb-3>textarea#noteinfo {
+    color: black;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    padding: 0.5em;
+    width: 97%;
+    height: 12em;
+}
+
+/*textarea placeholder*/
+#noteinfo::placeholder {
+    color: black;
+    opacity: 0.4;
+}
+
+/*placeholder*/
+
+#emailinfo {
+    color: black;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+}
+
+#emailinfo::placeholder {
+    color: black;
+    opacity: 0.4;
+}
+
+#phoneinfo {
+    color: black;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+}
+
+
+#phoneinfo::placeholder {
+    color: black;
+    opacity: 0.4;
+}
+
+#countryinfo {
+    color: black;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+}
+
+#countryinfo::placeholder {
+    color: black;
+    opacity: 0.4;
+}
+
+select#countryinfo > option:first-of-type {
+    color: black;
+    opacity: 0.4;
+}
+
+#firstname {
+    color: black;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+}
+
+
+#firstname::placeholder {
+    color: black;
+    opacity: 0.4;
+}
+
+#lastname {
+    color: black;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+}
+
+#lastname::placeholder {
+    color: black;
+    opacity: 0.4;
+}
+
+#stateprovince {
+    color: black;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+}
+
+#stateprovince::placeholder {
+    color: black;
+    opacity: 0.4;
+}
+
+#addressinfo {
+    color: black;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+}
+
+#addressinfo::placeholder {
+    color: black;
+    opacity: 0.4;
+}
+
+#unitno {
+    color: black;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+}
+
+#unitno::placeholder {
+    color: black;
+    opacity: 0.4;
+}
+
+#postal {
+    color: black;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+}
+
+#postal::placeholder {
+    color: black;
+    opacity: 0.4;
+}
+
+@media (max-width: 768px) {
+    input.form-control {
+        border: 1px solid #ced4da !important;
+    }
+    form fieldset div.infowrapper.half div.unitinfo:first-child {
+        width: 100%;
+        margin-bottom:1em;
+    }
+    
+    form fieldset div.infowrapper.half div.names:first-child {
+        width: 100%;
+        margin-bottom:1em;
+    }
+
+    form fieldset div.infowrapper.half div.unitinfo {
+        padding:0;
+    }
+
+    form fieldset div.infowrapper.half div.names {
+        padding: 0;
+    }
+
+}
+
+body > div > form > div > div.col-md-4.col-sm-12 > section > div.product > div > div.productimage > img {
+    width: 35%;
+}
+
+
+section.purchaseinfo {
+    background-color: #fff2e3;
+    padding:3em;
+    height: 100%;
+    margin: 0;
+}
+
+h3.productname.m-0 {
+    color: black;
+    font-family: GothamBold, Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+body > div > form > div > div.col-md-4.col-sm-12 > section > div.product > div > div.pricecontainer > p {
+    color: black;
+    opacity: 0.5;
+    font-family: GothamBold, Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+body > div > form > div > div.col-md-4.col-sm-12.px-0 > section > div.paymentcontainer > fieldset.voucher.mt-4 > div > input {
+    color: black;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+}
+
+body > div > form > div > div.col-md-4.col-sm-12.px-0 > section > div.paymentcontainer > fieldset.voucher.mt-4 > div > input::placeholder {
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    color: black;
+    opacity: 0.4;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-size: 0.8em;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    
+}
+
+button:hover {
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+
+body > div > form > div > div.col-md-4.col-sm-12.px-0 > section > div.paymentcontainer > div > div p.title {
+    font-family: GothamBold, Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    opacity: 0.5;
+    color: black;
+}
+
+body > div > form > div > div.col-md-4.col-sm-12.px-0 > section > div.paymentcontainer > div > div p.price {
+    font-family: GothamBold, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+/*voucher code input and button board radius*/
+body > div > form > div > div.col-md-4.col-sm-12.px-0 > section > div.paymentcontainer > fieldset.voucher.mt-4 > div > input {
+    border-radius: .25rem 0 0 .25rem;
+}
+body > div > form > div > div.col-md-4.col-sm-12.px-0 > section > div.paymentcontainer > fieldset.voucher.mt-4 > div > input:focus {
+    background-color: #f16154;
+}
+body > div > form > div > div.col-md-4.col-sm-12.px-0 > section > div.paymentcontainer > fieldset.voucher.mt-4 > div > input:focus::placeholder {
+    color: white;
+}
+
+#applybtn {
+    border-radius: 0 .25rem .25rem 0;
+}
+
+
+/*form email address input*/
+input.emailaddress-input.form-control:focus {
+    color: black;
+    background-color: #fff;
+    border: 2px solid black;
+    outline: 0;
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+input.emailaddress-input.form-control {
+    border: 1px solid lightgray;
+    border-radius: 5px !important;
+    max-width: 100% !important;
+}

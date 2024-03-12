@@ -1,0 +1,439 @@
+/*jumbotron*/
+div.jumbotron {
+    background-color: #fff2e3;
+}
+
+/*jumbotron font color and family*/
+div.jumbotron>div.container-fluid.text-center>h1.display-4 {
+    font-family: Ultra, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #f16154;
+}
+
+/*jumbotron paragraph*/
+div.jumbotron>div.container-fluid.text-center>p.lead {
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+/*pink colour button*/
+input[type="radio"]#pink {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding: 0.15em;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid white;
+    background-color: pink;
+    border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]#pink:checked {
+    background-color: pink;
+    border: 2px solid black;
+}
+
+/*black colour button*/
+input[type="radio"]#black {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding: 0.15em;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]#black:checked {
+    background-color: black;
+    border: 2px solid black;
+}
+
+/*gray colour button*/
+input[type="radio"]#gray {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding: 0.15em;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid white;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]#gray:checked {
+    background-color: gray;
+    border: 2px solid black;
+}
+
+/*white colour button*/
+input[type="radio"]#white {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding: 0.15em;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid white;
+    background-color: cornsilk;
+    border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]#white:checked {
+    background-color: cornsilk;
+    border: 2px solid black;
+}
+
+
+/*green colour button*/
+input[type="radio"]#green {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding: 0.15em;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid white;
+    background-color: mediumseagreen;
+    border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]#green:checked {
+    background-color: mediumseagreen;
+    border: 2px solid black;
+}
+
+
+/*brown colour button*/
+input[type="radio"]#brown {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding: 0.15em;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid white;
+    background-color: darkgoldenrod;
+    border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]#brown:checked {
+    background-color: darkgoldenrod;
+    border: 2px solid black;
+}
+
+
+/*red colour button*/
+input[type="radio"]#red {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding: 0.15em;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid white;
+    background-color: crimson;
+    border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]#red:checked {
+    background-color: crimson;
+    border: 2px solid black;
+}
+
+
+/*orange colour button*/
+input[type="radio"]#orange {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding: 0.15em;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid white;
+    background-color: coral;
+    border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]#orange:checked {
+    background-color: coral;
+    border: 2px solid black;
+}
+
+
+/*blue colour button*/
+input[type="radio"]#blue {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding: 0.15em;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid white;
+    background-color: dodgerblue;
+    border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]#blue:checked {
+    background-color: dodgerblue;
+    border: 2px solid black;
+}
+
+
+/*yellow colour button*/
+input[type="radio"]#yellow {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding: 0.15em;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid white;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]#yellow:checked {
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+/*sidebar accordian card to have no border*/
+.card {
+    border: none;
+}
+
+/*sidebar accordian card header to have no border*/
+div.card-header {
+    background-color: white;
+    border: none;
+}
+
+/*sidebar accordian button*/
+div.card-header>h5>button.btn.btn-link,
+div.card-header>h5>button.btn.btn-link:active {
+    font-size: 0.8em;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    color: black;
+    display: flex;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #f16154;
+    /* border: 2px solid black; */
+}
+
+/*sidebar accordian button hover state*/
+div.card-header>h5>button.btn.btn-link:hover {
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+}
+
+/*sidebar accordian button arrow img*/
+div.card-header>h5>button.btn.btn-link>img {
+    width: 1.5em;
+    transition: transform 0.3s ease;
+}
+
+/*sidebar accordian button arrow img 180 turn*/
+div.card-header>h5>button.btn.btn-link>img.turn {
+    transform: rotate(180deg);
+}
+
+
+
+/*bookmark icon toggle*/
+div.bookmark-toggler>img.fa-solid.fa-bookmark {
+    position: absolute;
+    display: none;
+
+}
+
+div.bookmark-toggler>img.fa-solid.fa-bookmark.show {
+    display: block;
+    cursor: pointer;
+}
+
+div.bookmark-toggler>img.fa-regular.fa-bookmark {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+div.bookmark-toggler>img.fa-regular.fa-bookmark.hide {
+    display: none;
+}
+
+/*product image hover and border radius*/
+div.picture1 img,
+div.picture2 img {
+    border-radius: 15px;
+}
+
+.picture2 {
+    display: none;
+}
+
+.thumbnail:hover .picture1 {
+    display: none;
+}
+
+.thumbnail:hover .picture2 {
+    display: block;
+}
+
+/*product name and price font size and family*/
+h5.thumb-product-name {
+    font-size: 1em;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+}
+
+p.thumb-product-price {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    opacity: 0.5;
+    font-family: GothamBold, Arial, Helvetica, sans-serif;
+}
+
+/*shop now button for each product*/
+a.btn.shop-now:link,
+a.btn.shop-now:active,
+a.btn.shop-now:visited {
+    margin-top: 1em;
+    border-radius: 30px;
+    padding: 0;
+    font-size: 0.8em;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    border-color: #f16154;
+    color: #f16154;
+}
+
+a.btn.shop-now:hover {
+    background-color: #f16154;
+    color: white;
+}
+
+/*make thumbnails responsive for xs mobile size*/
+@media (max-width: 574px) {
+
+    /*card text and bookmark body*/
+    div.slider div.row.card-body.mt-2.p-0 {
+        padding: 15% !important;
+        margin-top: 0.1em !important;
+    }
+
+    /*card text*/
+    div.slider div.row.card-body.mt-2.p-0>div.container-fluid.col-8 {
+        padding: 0;
+        flex: 0 0 50% !important;
+        margin: 0;
+    }
+
+    /*card bookmark*/
+    div.slider div.row.card-body.mt-2.p-0>div.container-fluid.col-2.bookmark-toggler.align-items-right.ml-auto.mr-3 {
+        margin-right: 0.2em !important;
+        padding: 0;
+    }
+
+    div.bookmark-toggler img {
+        margin-top: 0.3em;
+        width: 45%;
+    }
+    /*card shop now button*/
+    div.slider div.row.card-body.mt-2.p-0>div.container-fluid.col-6.w-100.mx-auto {
+        margin: 0 !important;
+        padding-right: 3em !important;
+    }
+
+    /*product image slider padding all around*/
+    div.row.product-image-group.flex-nowrap.overflow-hidden.p-5 div.col-md-3.col-sm-6 {
+        padding: 0.5rem;
+
+    }
+
+    
+/*product name and price font size and family*/
+h5.thumb-product-name {
+    font-size: 1.3em;
+}
+
+p.thumb-product-price {
+    font-size: 1em;
+}
+
+/*shop now button for each product*/
+a.btn.shop-now:link,
+a.btn.shop-now:active,
+a.btn.shop-now:visited {
+    font-size: 1em;
+}
+}
+
+
+

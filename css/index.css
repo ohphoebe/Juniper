@@ -1,0 +1,274 @@
+/*make buttons have no borders when clicked/focus state*/
+button:active {
+    outline: none;
+    box-shadow: none;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/*have smooth animation for all transitions eg. fade*/
+html {
+    scroll-behavior: smooth;
+    transition: all 0.3 ease;
+}
+
+/*carousel header banner: change indicators to round*/
+.carousel .carousel-indicators li {
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    opacity: 0.5;
+}
+
+/*carousel header banner: indicators active state*/
+.carousel .carousel-indicators li.active {
+    background-color: black;
+    opacity: 1;
+}
+
+/*carousel header banner: right btn hover state*/
+a.carousel-control-next:hover {
+    background: linear-gradient(to right, transparent, coral);
+}
+
+/*carousel header banner: left btn hover state*/
+a.carousel-control-prev:hover {
+    background: linear-gradient(to right, coral, transparent);
+}
+
+/*carousel header banner: left btn*/
+.carousel-control-prev-icon {
+    opacity: 0;
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e"); */
+}
+
+/*carousel header banner: right btn*/
+.carousel-control-next-icon {
+    opacity: 0;
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e"); */
+}
+
+
+
+
+
+/*container of product image slider to enable row overflow to hide from view port*/
+body>div.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+/*control scroll behaviour of product image slider*/
+body>div.slider>div.row.product-image-group {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    margin: 0;
+}
+
+/*product image slider: hide certain browsers' scrollbar*/
+body>div.slider>div.row.product-image-group::-webkit-scrollbar {
+    display: none;
+}
+
+/*product image slider: individual product width*/
+body>div.slider>div.row.product-image-group div.singleproduct {
+    flex: 0 0 auto;
+    width: 25.5%;
+    margin-right: 2%;
+    object-fit: contain;
+}
+
+
+/*product image group: slider button body*/
+div.slider button {
+    border: none;
+    width: 10%;
+    position: absolute;
+    top: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    background: transparent;
+}
+
+/*product image group: slider left button*/
+div.slider button.leftbtn {
+    left: 1%;
+}
+
+/*product image group: slider right button*/
+div.slider button.rightbtn {
+    right: 1%;
+}
+
+/*product image group: slider button img*/
+div.slider button.leftbtn img,
+div.slider button.rightbtn img {
+    opacity: 0.5;
+}
+
+/*product image group: slider button hover effect*/
+div.slider button.leftbtn:hover img {
+    opacity: 0.8;
+}
+
+div.slider button.rightbtn:hover img {
+    opacity: 0.8;
+}
+
+
+/*bookmark icon toggle*/
+div.bookmark-toggler>img.fa-solid.fa-bookmark {
+    position: absolute;
+    display: none;
+
+}
+
+div.bookmark-toggler>img.fa-solid.fa-bookmark.show {
+    display: block;
+    cursor: pointer;
+}
+
+div.bookmark-toggler>img.fa-regular.fa-bookmark {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+div.bookmark-toggler>img.fa-regular.fa-bookmark.hide {
+    display: none;
+}
+
+/*product image hover and border radius*/
+div.picture1 img,
+div.picture2 img {
+    border-radius: 15px;
+}
+
+.picture2 {
+    display: none;
+}
+
+.thumbnail:hover .picture1 {
+    display: none;
+}
+
+.thumbnail:hover .picture2 {
+    display: block;
+}
+
+/*product name and price font size and family*/
+h5.thumb-product-name {
+    font-size: 0.8em;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+}
+
+p.thumb-product-price {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    opacity: 0.5;
+    font-family: GothamBold, Arial, Helvetica, sans-serif;
+}
+
+/*shop now button for each product*/
+a.btn.shop-now:link,
+a.btn.shop-now:active,
+a.btn.shop-now:visited {
+    
+    border-radius: 30px;
+    padding: 0;
+    font-size: 0.7em;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    border-color: #f16154;
+    color: #f16154;
+}
+
+a.btn.shop-now:hover {
+    background-color: #f16154;
+    color: white;
+}
+
+/*make thumbnails responsive for xs mobile size*/
+@media (max-width: 574px) {
+
+    /*width of product slider image group*/
+    /* div.slider>div.row.product-image-group.flex-nowrap.overflow-hidden.p-5 {
+        max-width: 100%;
+    } */
+
+    /*slider button*/
+    div.slider button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 18% !important;
+        top: 40% !important;
+        height: auto;
+    }
+
+    /*card text and bookmark body*/
+    div.slider div.row.card-body.mt-2.p-0 {
+        padding: 15% !important;
+        margin-top: 0.1em !important;
+    }
+
+
+    /*card text*/
+    div.slider div.row.card-body.mt-2.p-0>div.container-fluid.col-8 {
+        padding: 0;
+        flex: 0 0 50% !important;
+        margin: 0;
+    }
+
+    /*card bookmark*/
+    div.slider div.row.card-body.mt-2.p-0>div.container-fluid.col-2.bookmark-toggler.align-items-right.ml-auto.mr-3 {
+        margin-right: 0.2em !important;
+        padding: 0;
+    }
+
+    /*product image slider padding all around*/
+    div.row.product-image-group.flex-nowrap.overflow-hidden.p-5 div.col-md-3.col-sm-6 {
+        padding: 0.5rem;
+
+    }
+}
+
+
+/*category header*/
+h3.category-header {
+    font-family: Ultra, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #f16154;
+}
+
+/*category header: shop more btn*/
+button.shop-more-btn {
+    border-radius: 25px;
+    padding: 0.3em 1.3em;
+    font-size: 0.8em;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/*category header: shop more btn hover state*/
+button.shop-more-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/*shop girls & shop boys thumbs to have rounded corners*/
+div.container-fluid>div.row.mx-4.my-4>div.col-md-6.col-sm-12.my-2 a img.shopThumbs.w-100.mx-auto {
+    border-radius: 15px;
+}

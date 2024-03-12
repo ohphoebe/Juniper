@@ -1,0 +1,381 @@
+/*import customized font family*/
+@font-face {
+    font-family: "GothamRegular";
+    src: url('../fonts/GothamMedium_1.ttf') format('truetype');
+    ;
+}
+
+@font-face {
+    font-family: "GothamBold";
+    src: url('../fonts/GothamBold.ttf') format('truetype');
+    src: url('../fonts/Gotham-Bold.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "Ultra";
+    src: url('../fonts/Ultra-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "GothamThinItalic";
+    src: url('../fonts/GothamBookItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "GothamBook";
+    src: url('../fonts/GothamBook.ttf') format('truetype');
+}
+
+/*have smooth animation for all transitions eg. fade*/
+html {
+    scroll-behavior: smooth;
+    transition: all 0.3 ease;
+}
+
+/*form input color for all input elements*/
+.form-control:focus {
+    color: black;
+    background-color: #fff;
+    border: 2px solid #f16154;
+    outline: 0;
+    box-shadow: none;
+}
+
+/*radio buttons color for all radio elements*/
+.custom-radio .custom-control-input.custom-control-label::before {
+    border-radius: 50%;
+    padding: 0.2em;
+} 
+
+.custom-control.custom-radio .custom-control-label::after {
+    padding: 0.2em;
+    background: lightgray;
+    border-radius: 50%;
+}
+.custom-radio .custom-control-input:checked~.custom-control-label::after{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23000000'/%3E%3C/svg%3E");
+   border-radius: 50%;
+}
+
+/*checkbox color for all checkbox elements*/
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+  }
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23000000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    background-color: #f16154;
+}
+  
+  .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
+    border-color: black;
+    background-color: lightgray;
+  }
+  
+  .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3e%3cpath stroke='%23f16154' d='M0 2h4'/%3e%3c/svg%3e");
+  }
+  
+  .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
+    background-color: rgba(0, 123, 255, 0.5);
+  }
+  
+  .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before {
+    background-color: rgba(0, 123, 255, 0.5);
+  }
+
+/*customize links and hover state in navbar*/
+#navbarContent>ul.navbar-nav>li.nav-item a.nav-link:link {
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+#navbarContent>ul.navbar-nav>li.nav-item a.nav-link:hover {
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    color: black;
+    opacity: 0.4;
+}
+
+/*menu bar icon no border*/
+body>nav>button.navbar-toggler,
+body>nav>button.navbar-toggler.collapsed {
+    border: none;
+    box-shadow: none;
+}
+
+/*menu bar icon focus state no border*/
+.navbar-light .navbar-toggler,
+.navbar-light .navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+/*customize X buttons*/
+#navbarContent>button.navbar-toggler.btn-close {
+    border: none;
+    color: black;
+}
+
+/*customize X buttons focus state*/
+#navbarContent>button.navbar-toggler.btn-close:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+
+/*footer mobile socials to right during web screen*/
+body>footer>div>div>div.col-md-4.col-sm-12.align-items-right.ml-auto>ul#center-mobile-socials {
+    justify-content: end !important;
+}
+
+/*customize mobile menu to slide from right*/
+@media (max-width: 768px) {
+
+    /*mobile menu*/
+    .navbar-collapse {
+        z-index: 99;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        background: #ff8680;
+        color: white;
+        max-width: 320px;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    /*mobile menu before show*/
+    .navbar-collapse.collapsing {
+        height: 100%;
+        -webkit-transition: right 0.3s ease;
+        -o-transition: right 0.3s ease;
+        -moz-transition: right 0.3s ease;
+        transition: right 0.3s ease;
+        right: -100%;
+    }
+
+    /*mobile menu after show*/
+    .navbar-collapse.show {
+        right: 0;
+        -webkit-transition: right 0.3s ease-in;
+        -o-transition: right 0.3s ease-in;
+        -moz-transition: right 0.3s ease-in;
+        transition: right 0.3s ease-in;
+    }
+
+    /*brand logo to align left*/
+    body>header>nav>a.navbar-brand.col-md-2.col-sm-4.text-left.mx-0.px-0 {
+        width: 50%;
+        justify-content: start;
+    }
+
+    /*hamburger icon*/
+    body>header>nav>button.navbar-toggler.btn.open {
+        width: 40%;
+        justify-content: end;
+    }
+
+    /*footer links to center during mobile screen*/
+    body>footer>div>div>div.col-md-4.col-sm-12.align-items-right.ml-auto>a#center-mobile {
+        justify-content: center !important;
+        margin-top: 2em !important;
+    }
+
+    /*footer mobile socials to center during mobile screen*/
+    body>footer>div>div>div.col-md-4.col-sm-12.align-items-right.ml-auto>ul#center-mobile-socials {
+        justify-content: center !important;
+    }
+
+    /*copyright*/
+    body>footer>div>div>div.row.justify-content-end.mt-3.col-md-4.col-sm-4.ml-auto.mx-3 {
+        justify-content: center !important;
+        margin: 0 auto !important;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*subscribe paragaph*/
+    body>footer>div>div>div.row.justify-content-end.mt-3.col-md-4.col-sm-4>p {
+        text-align: center !important;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+/*form email address input*/
+input.emailaddress-input.form-control:focus {
+    color: black;
+    background-color: #fff;
+    border: 2px solid black;
+    outline: 0;
+    box-shadow: none;
+}
+
+input.emailaddress-input.form-control {
+    border: 1px solid lightgray;
+}
+
+/*form search bar input*/
+input.searchbar-input.form-control {
+    border: 1px solid lightgray;
+}
+
+input.searchbar-input.form-control:focus {
+    color: black;
+    background-color: #f16154;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+input.searchbar-input.form-control:focus::placeholder {
+    color: white;
+}
+
+/*FOOTER*/
+/*footer background color, font*/
+body>footer>div.container-fluid>div.row.py-4.px-2 {
+    background: #f16154;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: black;
+}
+
+/*footer list header*/
+body>footer>div.container-fluid>div.row.py-4.px-2>div.col-md-2.col-sm-12.mb-4>h6.my-3,
+body>footer>div.container-fluid>div.row.py-4.px-2>div.col-md-4.col-sm-12>div.row.ml-2>h6.my-3 {
+    font-family: GothamBold, Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2em;
+    font-size: 0.4em;
+}
+
+/*footer list*/
+body>footer>div.container-fluid>div.row.py-4.px-2>div.col-md-2.col-sm-12.mb-4>ul.list-unstyled>li.list-group-item {
+    margin: 0;
+    padding: 0;
+    background-color: none;
+    height: 1em;
+}
+
+/*footer list links*/
+body>footer>div.container-fluid>div.row.py-4.px-2>div.col-md-2.col-sm-12.mb-4>ul.list-unstyled>li.list-group-item a:link,
+body>footer>div.container-fluid>div.row.py-4.px-2>div.col-md-2.col-sm-12.mb-4>ul.list-unstyled>li.list-group-item a:visited {
+    color: black;
+    font-size: 0.45em;
+    line-height: -5em;
+}
+
+/*footer list link hover*/
+body>footer>div.container-fluid>div.row.py-4.px-2>div.col-md-2.col-sm-12.mb-4>ul.list-unstyled>li.list-group-item a:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+/*subscribe paragraph*/
+body>footer>div.container-fluid>div.row.py-4.px-2>div.col-md-4.col-sm-12>div.row.ml-2>p.h6 {
+    color: black;
+    font-size: 0.45em;
+    line-height: -5em;
+}
+
+/*subscribe input focus state*/
+body>footer>div.container-fluid>div.row.py-4.px-2>div.col-md-4.col-sm-12>div.row.col-sm-12>form.form-inline>div.form-group>input#emailaddress:focus {
+    border: 7em black;
+    background-color: white;
+    outline: solid black;
+}
+
+/*subscribe input placeholder*/
+body>footer>div.container-fluid>div.row.py-4.px-2>div.col-md-4.col-sm-12>div.row.col-sm-12>form.form-inline>div.input-group.subscribe-input input#emailaddress::placeholder {
+    font-size: 0.9em;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    opacity: 0.6;
+}
+
+/*subscribe email button*/
+form.form-inline div.input-group.subscribe-input #emailaddress {
+    border-radius: 5px;
+}
+
+/*footer socials hover state*/
+body>footer>div>div>div.col-md-4.col-sm-12.align-items-right.ml-auto>ul>li.nav-item.mw-10>a:hover,
+body>footer>div>div>div.col-md-4.col-sm-12.align-items-right.ml-auto>ul>li.nav-item.mx-3>a:hover {
+    opacity: 0.6;
+    color: white;
+}
+
+/*footer copyright*/
+body>footer>div>div>div.row.justify-content-end.mt-3.col-md-4.col-sm-4>p {
+    font-size: 0.3em;
+    text-align: right;
+}
+
+/*search icon rounded corners*/
+#search-addon {
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+}
+
+/*search input rounded corners*/
+div.input-group>input.form-control {
+    border-radius: 15px 0px 0px 15px;
+    padding: 1em;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+}
+
+div.input-group>input.form-control::placeholder {
+    opacity: 0.6;
+}
+
+/*product image bookmarks icon*/
+div.col-3.bookmark-toggler {
+    position: relative;
+}
+
+
+button#back-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background: none;
+    width: 5vw;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: none;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+button.col-lg-2#back-top:active,
+button.col-lg-2#back-top:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+button.col-lg-2#back-top:hover {
+    transform: translateY(-1em);
+}
+
+/*customize size of back to top btn for mobile menu*/
+@media (max-width: 768px) {
+    button#back-top {
+        width: 10%;
+    }
+}
+
+@media (max-width: 500px) {
+    button#back-top {
+        width: 13%;
+    }
+}

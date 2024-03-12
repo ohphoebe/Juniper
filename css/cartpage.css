@@ -1,0 +1,198 @@
+/*make buttons have no borders when clicked/focus state*/
+button:active {
+    outline: none;
+    box-shadow: none;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/*width of product details box*/
+div.container-fluid.body {
+    width: 80%;
+}
+
+/*colour background of product details box*/
+div.row.productimgrow {
+    background-color: #fff2e3;
+}
+
+/*header*/
+div.container-fluid>div.row>h1.display-4 {
+    font-family: Ultra, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #f16154;
+}
+
+/*product image*/
+div.container-fluid>div.row.productimgrow>div.col-2 img {
+    width: 100%;
+}
+
+/*product name*/
+div.container-fluid>div.row>div.col-4.d-flex.align-items-center>h5 {
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+
+/*input stepper container*/
+body > div > div.row.productimgrow.p-4.itemgroup > div.col-lg-3.col-md-4.align-items-center.my-auto.w-100.m-0 > div.inputstepper {
+    text-align: center;
+    margin: auto 0;
+}
+
+/*input stepper*/
+body > div > div.row.productimgrow.p-4.itemgroup > div.col-lg-3.col-md-4.align-items-center.my-auto.w-100.m-0 > div.inputstepper>div.inputwrap {
+    width: 100%;
+    margin: 0 auto;
+    /* border: 2px solid black; */
+}
+
+/*input stepper number*/
+body > div > div.row.productimgrow.p-4.itemgroup > div.col-lg-3.col-md-3.col-sm-6.align-items-center.my-auto.w-100.m-0 > div.inputstepper>div.inputwrap>input[type="number"] {
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: none;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+}
+
+/*input stepper - hide default buttons*/
+body > div > div.row.productimgrow.p-4.itemgroup > div.col-lg-3.col-md-3.col-sm-6.align-items-center.my-auto.w-100.m-0 > div.inputstepper>div.inputwrap>input[type="number"]::-webkit-outer-spin-button,
+body > div > div.row.productimgrow.p-4.itemgroup > div.col-lg-3.col-md-3.col-sm-6.align-items-center.my-auto.w-100.m-0 > div.inputstepper>div.inputwrap>input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*input stepper buttons*/
+body > div > div.row.productimgrow.p-4.itemgroup > div.col-lg-3.col-md-3.col-sm-6.align-items-center.my-auto.w-100.m-0 > div.inputstepper button {
+    background-color: #f16154;
+    color: black;
+    border: none;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    cursor: pointer;
+    padding: 0.5em 1em;
+}
+
+/*input stepper buttons hover state*/
+body > div > div.row.productimgrow.p-4.itemgroup > div.col-lg-3.col-md-3.col-sm-6.align-items-center.my-auto.w-100.m-0 > div.inputstepper button:hover {
+    opacity: 0.6;
+}
+
+/*product price*/
+
+body > div > div.row.productimgrow.p-4.itemgroup > div.col-md-2.col-sm-12.align-items-center.my-auto > p.price {
+    font-family: GothamBold, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+
+/*go back link*/
+div.container-fluid> div.row.go-back-btn > a.link-hover {
+    transition: 0.5s ease;
+    margin-top: 1.7em;
+}
+
+/*go back link states*/
+div.container-fluid> div.row.go-back-btn > a.link-hover:link,
+div.container-fluid> div.row.go-back-btn > a.link-hover:visited,
+div.container-fluid> div.row.go-back-btn > a.link-hover:active {
+    text-decoration: none;
+    color: black;
+}
+
+/*go back link hover state*/
+div.container-fluid> div.row.go-back-btn > a.link-hover:hover {
+    display: inline-block;
+    text-decoration: none;
+    transform: translateX(-7px);
+    opacity: 0.5;
+    color: black;
+}
+
+/*go back link text separate from arrow*/
+div.container-fluid> div.row.go-back-btn > a.link-hover span {
+    margin-left: 0.4em;
+}
+
+
+/*subtotal price*/
+div.container-fluid> div.row.go-back-btn.justify-content-between>div.subtotal {
+    text-align: right;
+}
+
+/*subtotal price - title*/
+div.container-fluid> div.row.go-back-btn.justify-content-between > div > div.subtotal > p.subtotaltitle {
+    font-family: GothamBold, Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    opacity: 0.5;
+}
+
+/*subtotal price - price*/
+div.container-fluid> div.row.go-back-btn.justify-content-between > div > div.subtotal > p.subtotalprice {
+    font-family: GothamBold, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+/*checkout container*/
+div.container-fluid> div.row.go-back-btn.justify-content-between>div.checkoutcontainer {
+    text-align: right;
+}
+
+/*checkout - small text*/
+div.container-fluid> div.row.go-back-btn.justify-content-between > div > div.checkoutcontainer > div.smalltext > p {
+    font-family: GothamThinItalic, Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    margin-top: 0.8em;
+}
+
+
+/*checkout button*/
+button#checkoutbtn {
+    border-radius: 25px;
+    padding: 0.3em 1.3em;
+    font-size: 1.1em;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+button#checkoutbtn:hover {
+    background-color: white;
+    color: black;
+}
+
+/*item group*/
+body > div > div.row.productimgrow.p-4.itemgroup {
+    text-align: center;
+    justify-content: center;
+}
+
+/*item name*/
+div.container-fluid>div.row.productimgrow.p-4.itemgroup > div > h5 {
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 1.1em;
+
+}
+
+/*mobile view of product image*/
+@media (max-width: 768px) {
+    body > div > div.row.productimgrow.p-4.itemgroup > div.col-2 {
+        max-width: 10rem;
+        flex:0 0 35vw;
+    }
+}
+
+div.row.productimgrow.p-4.emptycontainer > h3.display-4.m-5.p-4 {
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 1em;
+}

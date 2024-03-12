@@ -1,0 +1,354 @@
+/*product name*/
+div.container-fluid>div.row.justify-content-center>div.col-md-5.col-sm-3>div.row.my-4.justify-content-between>div.col-md-4.col-sm-8>h3.productname {
+    color: black;
+    font-family: GothamBold, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+/*product price*/
+div.container-fluid>div.row.justify-content-center>div.col-md-5.col-sm-3>div.row.my-4.justify-content-between>div.col-md-4.col-sm-8>p.price.mb-4 {
+    color: black;
+    opacity: 0.5;
+    font-family: GothamBold, Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+/*form labels*/
+label.custom-control-label {
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+/*product details: size*/
+h4.productname.col-12:first-child {
+    color: gray;
+    font-family: GothamBold, Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid gray;
+    margin-top: 0;
+    opacity: 0.7;
+    width: 100vw;
+}
+
+/*product details: colour*/
+body > div:nth-child(3) > div > div.col-md-5.col-sm-3 > div:nth-child(2) > h4:nth-child(3){
+    color: gray;
+    font-family: GothamBold, Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid gray;
+    margin-top: 1em;
+    opacity: 0.7;
+    width: 100vw;
+}
+
+/*product details: quantity*/
+body > div:nth-child(3) > div > div.col-md-5.col-sm-3 > div:nth-child(2) > h4:nth-child(5) {
+    color: gray;
+    font-family: GothamBold, Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid gray;
+    margin-top: 0em;
+    opacity: 0.7;
+    width: 100vw;
+}
+
+/*bookmark icon toggle*/
+div.bookmark-toggler>img.fa-solid.fa-bookmark {
+    position: absolute;
+    display: none;
+    width: 45%;
+}
+
+div.bookmark-toggler>img.fa-solid.fa-bookmark.show {
+    display: block;
+    cursor: pointer;
+}
+
+div.bookmark-toggler>img.fa-regular.fa-bookmark {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    opacity: 0.3;
+    width: 45%;
+}
+
+div.bookmark-toggler>img.fa-regular.fa-bookmark.hide {
+    display: none;
+}
+
+
+/*pink colour button*/
+input[type="radio"]#pink {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding: 0.15em;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid white;
+    background-color: pink;
+    border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]#pink:checked {
+    background-color: pink;
+    border: 2px solid black;
+}
+
+/*black colour button*/
+input[type="radio"]#black {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding: 0.15em;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]#black:checked {
+    background-color: black;
+    border: 2px solid black;
+}
+
+/*gray colour button*/
+input[type="radio"]#gray {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding: 0.15em;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid white;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]#gray:checked {
+    background-color: gray;
+    border: 2px solid black;
+}
+
+/*white colour button*/
+input[type="radio"]#white {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding: 0.15em;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid white;
+    background-color: cornsilk;
+    border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]#white:checked {
+    background-color: cornsilk;
+    border: 2px solid black;
+}
+
+
+/*green colour button*/
+input[type="radio"]#green {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding: 0.15em;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid white;
+    background-color: mediumseagreen;
+    border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]#green:checked {
+    background-color: mediumseagreen;
+    border: 2px solid black;
+}
+
+
+
+/*input stepper container*/
+div.inputstepper {
+    text-align: center;
+    margin: auto 0;
+}
+
+/*input stepper number*/
+div.inputstepper>div.inputwrap>input[type="number"] {
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: none;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+/*input stepper - hide default buttons*/
+div.inputstepper>div.inputwrap>input[type="number"]::-webkit-outer-spin-button,
+div.inputstepper>div.inputwrap>input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*input stepper buttons*/
+div.inputstepper button {
+    background-color: #f16154;
+    color: black;
+    border: none;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+/*input stepper buttons hover state*/
+div.inputstepper button:hover {
+    opacity: 0.6;
+}
+
+/*add to bag button*/
+button {
+    background-color: black;
+    color: white;
+    font-size: 0.8em;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+
+}
+
+button:hover {
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+
+/*mobile view of product image*/
+@media (max-width: 768px) {
+
+    /*bookmark icon toggle*/
+    div.bookmark-toggler>img.fa-solid.fa-bookmark {
+        width: 25%;
+    }
+
+
+    div.bookmark-toggler>img.fa-regular.fa-bookmark {
+        width: 25%;
+    }
+
+    /* body>div.container-fluid.w-100.mx-auto>div>div.col-md-5.col-sm-7.w-75.mb-4.justify-content-center {
+        width: 100% !important;
+    } */
+
+    /*product name*/
+    div.container-fluid>div.row.justify-content-center>div.col-md-5.col-sm-3>div.row.my-4.justify-content-between>div.col-md-4.col-sm-8>h3.productname {
+        color: black;
+        font-family: GothamBold, Arial, Helvetica, sans-serif;
+        font-size: 1em;
+    }
+
+    /* body>div.container-fluid.w-100.mx-auto>div>div.col-md-5.col-sm-7.w-75.mb-4.justify-content-center>div:nth-child(2)>div {
+        width: 15%;
+        margin-bottom: 0.4em;
+    } */
+
+    /*product thumbnails*/
+    div.col-md-2.col-sm-2.p-0.mx-2 {
+        width: 20%;
+    }
+
+    /*img stars rating*/
+    div.reviewgroup.col-3.text-left img.rating.w-50 {
+        width: 100% !important;
+    }
+
+
+
+}
+
+
+/*producct thumbnails and hover states*/
+img.w-100 {
+    transition: all 0.5s ease;
+}
+
+/*pictures hover*/
+img.w-100:hover {
+    border: 2px solid black;
+}
+
+/*review title*/
+body>div:nth-child(4)>div.container-fluid.w-100.mx-auto>div>h1 {
+    font-family: Ultra, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: #f16154;
+}
+
+/*review name*/
+p.reviewname {
+    color: black;
+    font-family: GothamBold, Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    opacity: 0.5;
+}
+
+/*review text body*/
+div.reviewtext {
+    color: black;
+    font-family: GothamRegular, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+/*review product details*/
+p.reviewproductdetails {
+    color: black;
+    font-family: GothamThinItalic, Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    opacity: 0.5;
+}
+
+/*review date*/
+div.reviewdate {
+    color: black;
+    font-family: GothamBold, Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    opacity: 0.5;
+}
+
+/*review whole section*/
+div.reviewportion {
+    margin: 5em 0;
+}
